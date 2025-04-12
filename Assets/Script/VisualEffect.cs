@@ -30,14 +30,14 @@ namespace TarodevController
         private AudioClip[] _footsteps;
 
         private AudioSource _source;
-        private IPlayerControllerr _player;
+        private IPlayerController _player;
         private bool _grounded;
         private ParticleSystem.MinMaxGradient _currentGradient;
 
         private void Awake()
         {
             _source = GetComponent<AudioSource>();
-            _player = GetComponentInParent<IPlayerControllerr>();
+            _player = GetComponentInParent<IPlayerController>();
         }
 
         private void OnEnable()
